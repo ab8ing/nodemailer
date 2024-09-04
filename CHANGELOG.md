@@ -1,5 +1,37 @@
 # CHANGELOG
 
+## [6.10.0](https://github.com/ab8ing/nodemailer/compare/v6.9.15...v6.10.0) (2024-09-04)
+
+
+### Features
+
+* added https://forwardemail.net to well-known services ([c77d70f](https://github.com/ab8ing/nodemailer/commit/c77d70f6ed885695e7778f9604591f48f852e817))
+
+
+### Bug Fixes
+
+* `requeueAttempts=n` should requeue `n` times ([3bfc545](https://github.com/ab8ing/nodemailer/commit/3bfc5452f74e84d8f9aacb2eec7b8a4726b5b40d))
+* 🐛 ses verify, add support for v3 API ([6107585](https://github.com/ab8ing/nodemailer/commit/61075851839207b1ff541b77797ef7afe3c46c42))
+* **api:** Added support for Ethereal authentication ([56b2205](https://github.com/ab8ing/nodemailer/commit/56b22052a98de9e363f6c4d26d1512925349c3f3))
+* **customAuth:** Do not require user and pass to be set for custom authentication schemes (fixes [#1584](https://github.com/ab8ing/nodemailer/issues/1584)) ([41d482c](https://github.com/ab8ing/nodemailer/commit/41d482c3f01e26111b06f3e46351b193db3fb5cb))
+* **data-uri:** Do not use regular expressions for parsing data URI schemes ([12e65e9](https://github.com/ab8ing/nodemailer/commit/12e65e975d80efe6bafe6de4590829b3b5ebb492))
+* **data-uri:** Moved all data-uri regexes to use the non-regex parseDataUri method ([edd5dfe](https://github.com/ab8ing/nodemailer/commit/edd5dfe5ce9b725f8b8ae2830797f65b2a2b0a33))
+* DSN recipient gets ignored ([75a1504](https://github.com/ab8ing/nodemailer/commit/75a1504e10f20156ef2cecefc27e47e588ab2c80))
+* Fix memory leak ([#1667](https://github.com/ab8ing/nodemailer/issues/1667)) ([baa28f6](https://github.com/ab8ing/nodemailer/commit/baa28f659641a4bc30360633673d851618f8e8bd))
+* **headers:** Ensure that Content-type is the bottom header ([c7cf97e](https://github.com/ab8ing/nodemailer/commit/c7cf97e5ecc83f8eee773359951df995c9945446))
+* **inline:** Use 'inline' as the default Content Dispostion value for embedded images ([db32c93](https://github.com/ab8ing/nodemailer/commit/db32c93fefee527bcc239f13056e5d9181a4d8af))
+* **license:** Updated license year ([da4744e](https://github.com/ab8ing/nodemailer/commit/da4744e491f3a68f4f68e4073684370592630e01))
+* **message-generation:** Escape single quote in address names ([4ae5fad](https://github.com/ab8ing/nodemailer/commit/4ae5fadeaac70ba91abf529fcaae65f829a39101))
+* **mime:** Added GeoJSON closes [#1637](https://github.com/ab8ing/nodemailer/issues/1637) ([#1665](https://github.com/ab8ing/nodemailer/issues/1665)) ([79b8293](https://github.com/ab8ing/nodemailer/commit/79b8293ad557d36f066b4675e649dd80362fd45b))
+* **punycode:** do not use native punycode module ([b4d0e0c](https://github.com/ab8ing/nodemailer/commit/b4d0e0c7cc4b15bc4d9e287f91d1bcaca87508b0))
+* **security:** Fix issues described in GHSA-9h6g-pr28-7cqp. Do not use eternal matching pattern if only a few occurences are expected ([dd8f5e8](https://github.com/ab8ing/nodemailer/commit/dd8f5e8a4ddc99992e31df76bcff9c590035cd4a))
+* **services.json:** Add Email Services Provider Feishu Mail (CN) ([#1648](https://github.com/ab8ing/nodemailer/issues/1648)) ([e9e9ecc](https://github.com/ab8ing/nodemailer/commit/e9e9ecc99b352948a912868c7912b280a05178c6))
+* **services.json:** update Mailtrap host and port in well known ([#1652](https://github.com/ab8ing/nodemailer/issues/1652)) ([fc2c9ea](https://github.com/ab8ing/nodemailer/commit/fc2c9ea0b4c4f4e514143d2a138c9a23095fc827))
+* **tests:** Removed Node v12 from test matrix as it is not compatible with the test framework anymore ([7fe0a60](https://github.com/ab8ing/nodemailer/commit/7fe0a608ed6bcb70dc6b2de543ebfc3a30abf984))
+* **tests:** Use native node test runner, added code coverage support, removed grunt ([#1604](https://github.com/ab8ing/nodemailer/issues/1604)) ([be45c1b](https://github.com/ab8ing/nodemailer/commit/be45c1b299d012358d69247019391a02734d70af))
+* **tls:** Ensure servername for SMTP ([d66fdd3](https://github.com/ab8ing/nodemailer/commit/d66fdd3dccacc4bc79d697fe9009204cc8d4bde0))
+* **well-known-services:** Add Loopia in well known services ([#1655](https://github.com/ab8ing/nodemailer/issues/1655)) ([21a28a1](https://github.com/ab8ing/nodemailer/commit/21a28a18fc9fdf8e0e86ddd846e54641395b2cb6))
+
 ## [6.9.15](https://github.com/nodemailer/nodemailer/compare/v6.9.14...v6.9.15) (2024-08-08)
 
 
